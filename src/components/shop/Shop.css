@@ -1,0 +1,205 @@
+:root {
+    --bg : #e76e62;
+    --padding : 2% 6%
+}
+
+.shop_container {
+    padding: var(--padding);
+}
+
+.category_item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.category_item h2 {
+    font-size: 13px;
+    text-align: center;
+    transition: .3s;
+}
+
+.category_picture {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    border: 2px solid #e4e4e4;
+    transition: .3s;
+}
+
+.category_item:hover > h2 {
+    color: var(--bg);
+}
+
+.category_item:hover > .category_picture {
+    border-color: var(--bg);
+}
+
+.shop_advert {
+    width: 100%;
+    height: 350px;
+    background: url(http://teckstore.doradothemes.com/img/dorthumbs/1080x250/dor_bannercategories/images/429-teck_cate_banner.png) no-repeat center center / cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    border-radius: 20px;
+}
+
+.shop_advert > h2 {
+    font-size: 40px;
+    color: var(--bg);
+}
+
+.shop_page {
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.shop_page > h2 {
+    text-align: center;
+    font-size: 35px;
+}
+
+.add_animation {
+    padding: 10px 15px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    background: #fff;
+    width: 320px;
+    align-items: center;
+    overflow: hidden;
+    height: 60px;
+    position: fixed;
+    right: 6%;
+    bottom: 5%;
+    border-radius: 10px;
+    z-index: 5;
+    box-shadow: 4px 5px 3px #0005;
+  }
+  
+  .add_animation svg {
+    color: var(--bg);
+    font-size: 25px;
+  }
+  
+  .add_animation span {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 25px;
+  }
+  
+  .line {
+    width: 100%;
+    height: 5px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: #fff;
+  }
+  
+  .green_line {
+    width: 0;
+    background: var(--bg);
+    height: 100%;
+  }
+  
+  .greenLineStart {
+    animation: go 1.5s linear 1 forwards 1s;
+  }
+  
+  @keyframes go {
+    to {
+      width: 100%;
+    }
+  }
+
+.filter_bar {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: var(--padding);
+    border-radius: 20px;
+    background: var(--bg);
+    color: #fff;
+}
+
+.select_block {
+    display: flex;
+    gap:15px;
+    align-items: center;
+}
+
+.select_block select {
+    width: 250px;
+    height: 40px;
+    border: 1px solid #e4e4e4;
+    border-radius: 10px;
+    outline: none;
+}
+
+.shop_products {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 15px;
+}
+
+.shop {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:8px;
+    border: 1px solid var(--bg);
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.shop img {
+    width: 80%;
+}
+
+.price_block {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.price_block h2 {
+    color: var(--bg);
+}
+
+.shop_icons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 25px;
+    position: absolute;
+    top: 20px;
+    left: -200px;
+    transition: .5s cubic-bezier(0.86, 0, 0.07, 1);
+}
+
+.shop_icons svg {
+    transition: .3s;
+    cursor: pointer;
+}
+
+.shop_icons svg:hover {
+    color: var(--bg);
+}
+
+.shop:hover > .shop_icons {
+    left: 20px;
+}

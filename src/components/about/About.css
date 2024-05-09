@@ -1,0 +1,176 @@
+:root {
+    --bg : #e76e62;
+    --padding : 2% 6%;
+}
+
+.about_company {
+    width: 100%;
+    padding: var(--padding);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.team_container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 1rem;
+    padding: 2.5% 0;
+}
+
+.about_content {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 30px;
+    height: 500px;
+}
+
+.about_info {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 0 2%;
+}
+
+.about_info ul {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    list-style: none;
+}
+
+.about_info ul li::before {
+    content: "✔";
+    padding-right: 20px;
+}
+
+.can_do_container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 30px;
+}
+
+.can_do {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.can_do i {
+    padding-left: 30px;
+    font-size: 13px;
+    position: relative;
+}
+
+.can_do i::before {
+    content: '';
+    width: 1px;
+    height: 100%;
+    background: var(--bg);
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.skills {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 0 2%;
+}
+
+.skills_container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.skill {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.skill_text {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.grayLine {
+    width: 100%;
+    height: 10px;
+    background: #c2c2c2;
+    border-radius: 100vw;
+}
+
+.colorLine {
+    height: 100%;
+    background: var(--bg);
+    border-radius: 100vw;
+}
+
+.skill_percent {
+    position: absolute;
+}
+
+.about_team {
+    width: 100%;
+    padding: var(--padding);
+}
+
+.team_item {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+.team_item img {
+    width: 100%;
+}
+
+.team_item h2 {
+    font-weight: 200;
+}
+
+.team_item span {
+    font-weight: 100;
+}
+
+.about_icons {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.about_team .swiper {
+    padding-bottom: 3%;
+}
+
+.about_company > h2 {
+    font-weight: 200;
+    font-size: 40px;
+    padding-bottom: 3%;
+    position: relative;
+}
+
+.about_company > h2::before {
+    content: '';
+    width: 200px;
+    height: 1px;
+    background: var(--bg);
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 55%;
+}
